@@ -24,7 +24,18 @@
       <td>
           <div class="row justify-content-center">
               <div class="col-md-3">
-                  <button class="btn btn-warning">Editar</button>
+                  
+                    <router-link 
+                    class="btn btn-warning"
+                    :to="{
+                      name: 'Editar',
+                      params: {
+                        id: tarea.id
+                      }
+                    }">
+                    Editar
+                    </router-link>
+                  
               </div>
               <div class="col-md-3">
                   <button class="btn btn-danger" @click="deleteTarea(tarea.id)">Eliminar</button>
@@ -34,7 +45,6 @@
     </tr>
     </tbody>
   </table>
-  {{ tareas }}
 </template>
 
 <script>

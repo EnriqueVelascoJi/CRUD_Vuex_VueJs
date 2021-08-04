@@ -57,14 +57,15 @@
       v-model.number="tarea.numero">
     </div>
 
-    <button type="submit" class="btn btn-success btn-block mt-5" :disabled="habilitarBtn">Procesar</button>
+    <button type="submit" class="btn btn-success btn-block mt-5" :disabled="habilitarBtn">{{tituloBtn}}</button>
 </template>
 
 <script>
 export default {
     name: 'Input',
     props: {
-        tarea: Object
+        tarea: Object,
+        tituloBtn: String
     },
     computed: {
         habilitarBtn() {
