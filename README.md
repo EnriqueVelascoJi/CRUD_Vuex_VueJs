@@ -1,4 +1,4 @@
-# formulario-1
+# CRUD Vuex
 
 ## Project setup
 ```
